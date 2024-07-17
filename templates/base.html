@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A blog-style digital library and discussion board.">
+    <meta name="keywords" content="books, reading, reviews, discussion, blog">
+    <!--Title-->
+    <title>ReadIt - The Happy Place For Bookworms</title>
+    <!--CSS link-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!--Favicon-->
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="{% static 'images/redit.jpeg' %}" alt="ReadIt">
+                </a>
+            </div>
+            <!--add profile icon to the right-->
+        </nav>
+    </header>
+
+    {% block content %}
+
+    <!-- blog content -->
+
+    {% endblock %}
+
+    <footer>
+        <div>
+            <h3> Discover more:</h3>
+            <ul>
+                <li class="list-item">
+                    <a href="https://facebook.com" target="_blank" rel="noopener"
+                        aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="list-item">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i
+                        class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="list-item">
+                    <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><i
+                        class="fa-brands fa-tiktok"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
