@@ -74,3 +74,48 @@ Read.it is a virtual library where users can upload books they've read, create p
 - 
 - 
 
+### Technologies used
+
+Django:
+Django==3.2
+django-allauth==0.48.0
+gunicorn==20.1.0
+dj-database-url~=0.5
+psycopg2~=2.9
+
+
+- Django was used as the main Python framework in the development of this project. 
+
+- Heroku - was used as the cloud based platform to deploy and host the project
+
+- HTML
+
+- CSS 
+
+- Bootstrap
+
+- Font Awesome
+
+- 
+
+
+
+### Deployment
+
+**Deploying to Heroku**
+- Started by navigating to my Heroku dashboard
+- Create new app
+- Added DISABLE_COLLECTSTATIC to config.vars
+- Got my code ready for deployment by:
+  - installed gunicorn~=20.1 webserver
+  - created a Procfile in the root directory where I declared a process and added a start command
+  - changed DEBUG to False
+  - added Heroku to ALLOWED_HOSTS
+  - commited and pushed my code to GitHub
+- Connecting my GitHub Repository to the app
+- Chose manual deployment
+
+
+### Testing
+
+### Credits
